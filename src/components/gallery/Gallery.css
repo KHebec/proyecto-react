@@ -3,9 +3,12 @@
   padding-top: 20px;
   padding-left: 18px;
 }
-
+.alice-carousel__stage-item {
+  vertical-align: middle;
+  text-align: center;
+}
 .img-gallery {
-  height: 250px;
+  height: 250px !important;
   width: 200px;
   max-width: 100%;
   object-fit: contain;
@@ -13,7 +16,17 @@
   border: solid 1px rgb(42, 142, 65);
   border-radius: 0.5rem;
   background-color: white;
-  box-shadow: inset 8px 8px 8px rgb(2, 26, 8);
+  opacity: 0.85;
+}
+.info-img {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.img-gallery:hover {
+  opacity: 1;
+  height: 255px;
 }
 
 .alice-carousel__dots-item {
@@ -23,10 +36,11 @@
 
 .alice-carousel__dots {
   padding-bottom: 20px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 519px) {
   .alice-carousel__stage-item {
-    margin-left: 5%;
+    text-align: center;
   }
 }

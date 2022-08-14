@@ -6,13 +6,16 @@ import "./Gallery.css";
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img
-    src="https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000"
-    onDragStart={handleDragStart}
-    role="presentation"
-    alt="whiskey ballentines"
-    className="img-gallery"
-  />,
+  <div>
+    <img
+      src="https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="whiskey ballentines"
+      className="img-gallery"
+    />
+    <p className="info-img">Whiskey Ballentines</p>
+  </div>,
   <img
     src="https://vinotecamasis.com.ar/wp-content/uploads/2021/11/Whisky-Johnnie-Walker-Double-Black-750-ml.png"
     onDragStart={handleDragStart}
