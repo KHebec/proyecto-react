@@ -1,10 +1,10 @@
 import "./App.css";
-import Gallery from "./components/gallery/Gallery";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Gallery />
+      <Layout />
     </div>
   );
 }
