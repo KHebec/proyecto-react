@@ -26,7 +26,7 @@
 {
     "id": 4,
     "image": "https://d2r9epyceweg5n.cloudfront.net/stores/001/178/243/products/copia-de-thumb_55240_default_big1-6ad18aff1c29987d7715906069364517-1024-1024.png",
-    "brand": "whisky The Breedre's choice",
+    "brand": "whisky The Breedre's Choice",
     "price": "300",
     "stock": 20,
     "content" : 1
@@ -66,7 +66,7 @@
 {
     "id": 9,
     "image": "https://whiskypedia.com.ar/wp-content/uploads/2020/10/Moreira-final-1.jpg",
-    "brand": "Moreira gin",
+    "brand": "gin Moreira ",
     "price": "300",
     "stock": 20,
     "content" : 1
@@ -82,7 +82,7 @@
 {
     "id": 11,
     "image": "https://hiperlibertad.vteximg.com.br/arquivos/ids/170382-1000-1000/Vodka-Absolut-40-x-750cc-1-10567.jpg?v=637414119679130000",
-    "brand": "vodka Abolut",
+    "brand": "vodka Absolut",
     "price": "300",
     "stock": 20,
     "content" : 0.75
@@ -93,7 +93,7 @@
     "brand": "vodka Smirnoff",
     "price": "300",
     "stock": 20,
-    "content" : 0.7
+    "content" : 0.75
 
 },
 {

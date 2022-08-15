@@ -1,12 +1,10 @@
 import "./App.css";
-import Gallery from "./components/gallery/Gallery";
-import logo from "./assets/images/logo.svg";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
     <div className="App">
-      <img className="logo" src={logo} alt="logo" />
-      <Gallery />
+      <Layout />
     </div>
   );
 }
