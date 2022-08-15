@@ -17,6 +17,7 @@ const items = data.map((e) => (
     />
     <p className="info-product">{e.brand}</p>
     <p className="product-content">{e.content * 1000} ml</p>
+    <p className="product-price">$ {e.price}</p>
   </div>
 ));
 

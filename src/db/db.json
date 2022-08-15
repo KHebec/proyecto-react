@@ -3,7 +3,7 @@
     "id": 1,
     "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
     "brand": "whisky Ballentines",
-    "price": "300",
+    "price": "5300",
     "stock": 20,
     "content" : 1
 },
@@ -11,7 +11,7 @@
     "id": 2,
     "image": "https://vinotecamasis.com.ar/wp-content/uploads/2021/11/Whisky-Johnnie-Walker-Double-Black-750-ml.png",
     "brand": "whisky Johnnie Walker",
-    "price": "300",
+    "price": "12500",
     "stock": 20,
     "content" : 1
 },
@@ -19,7 +19,7 @@
     "id": 3,
     "image": "https://d2r9epyceweg5n.cloudfront.net/stores/855/349/products/glenfiddich1-9e5f26f61ec2d2e19316469249991695-1024-1024.jpeg",
     "brand": "whiskey Glenfiddich",
-    "price": "300",
+    "price": "8650",
     "stock": 20,
     "content" : 1
 },
@@ -27,7 +27,7 @@
     "id": 4,
     "image": "https://d2r9epyceweg5n.cloudfront.net/stores/001/178/243/products/copia-de-thumb_55240_default_big1-6ad18aff1c29987d7715906069364517-1024-1024.png",
     "brand": "whisky The Breedre's Choice",
-    "price": "300",
+    "price": "7580",
     "stock": 20,
     "content" : 1
 },
@@ -35,7 +35,7 @@
     "id": 5,
     "image": "https://jumboargentina.vtexassets.com/arquivos/ids/550204/Gin-Hiram-Walker-Dry-1-L-1-248015.jpg?v=637056691359500000",
     "brand": "gin Hiram Walker Dry",
-    "price": "300",
+    "price": "5970",
     "stock": 20,
     "content" : 1
 },
@@ -43,7 +43,7 @@
     "id": 6,
     "image": "https://borrachines.com.ar/wp-content/uploads/2021/11/GIN-HENDRICKS-DRY-700-ML.jpg",
     "brand": "gin Hiram Hendricks Dry",
-    "price": "300",
+    "price": "7850",
     "stock": 20,
     "content" : 1
 },
@@ -51,7 +51,7 @@
     "id": 7,
     "image": "https://gobar.vteximg.com.br/arquivos/ids/155701-1000-1000/01031900007.jpg?v=636684849576800000",
     "brand": "gin Bombay Sapphire Dry",
-    "price": "300",
+    "price": "11590",
     "stock": 20,
     "content" : 1
 },
@@ -59,7 +59,7 @@
     "id": 8,
     "image": "https://media.tada.com.ar/produc_variant/00000209_64863807-c359-468f-8310-98938bdd7776.jpg",
     "brand": "gin Beefeater Dry",
-    "price": "300",
+    "price": "9650",
     "stock": 20,
     "content" : 1
 },
@@ -67,7 +67,7 @@
     "id": 9,
     "image": "https://whiskypedia.com.ar/wp-content/uploads/2020/10/Moreira-final-1.jpg",
     "brand": "gin Moreira ",
-    "price": "300",
+    "price": "9680",
     "stock": 20,
     "content" : 1
 },
@@ -75,7 +75,7 @@
     "id": 10,
     "image": "https://carrefourar.vtexassets.com/arquivos/ids/226757/7790290101510_01.jpg?v=637715449423630000",
     "brand": "vodka Sernova",
-    "price": "300",
+    "price": "7780",
     "stock": 20,
     "content" : 1
 },
@@ -83,7 +83,7 @@
     "id": 11,
     "image": "https://hiperlibertad.vteximg.com.br/arquivos/ids/170382-1000-1000/Vodka-Absolut-40-x-750cc-1-10567.jpg?v=637414119679130000",
     "brand": "vodka Absolut",
-    "price": "300",
+    "price": "10360",
     "stock": 20,
     "content" : 0.75
 }, 
@@ -91,7 +91,7 @@
     "id": 12,
     "image": "https://jumboargentina.vtexassets.com/arquivos/ids/580828/Vodka-Smirnoff-700-Ml-1-30335.jpg?v=637220856183930000",
     "brand": "vodka Smirnoff",
-    "price": "300",
+    "price": "6650",
     "stock": 20,
     "content" : 0.75
 
@@ -100,7 +100,7 @@
     "id": 13,
     "image": "https://jumboargentina.vtexassets.com/arquivos/ids/677723/Vodka-Tailov-1-L-1-41637.jpg?v=637733867198800000",
     "brand": "vodka Tailov",
-    "price": "300",
+    "price": "12590",
     "stock": 20,
     "content" : 1
 },
@@ -108,7 +108,7 @@
     "id": 14,
     "image": "https://bachelordrinks.com.ar/wp-content/uploads/2020/08/productos-vodka-01.jpg",
     "brand": "vodka Pravda",
-    "price": "300",
+    "price": "11970",
     "stock": 20,
     "content" : 1
 }
