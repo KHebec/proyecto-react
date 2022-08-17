@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "./../components/carousel/Carousel";
 import "./Layout.css";
+// import { ProductList } from "../components/test/ProductList";
 
 function Layout() {
   return (
@@ -11,7 +12,7 @@ function Layout() {
         {/* Hero */}
         <section className="hero">Hero</section>
         {/* Cards */}
-        <section className="cards">Cards</section>
+        <section className="cards">{/* <ProductList /> */}</section>
         {/* About */}
         <section className="about">About</section>
         {/* carousel */}
