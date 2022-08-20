@@ -1,0 +1,18 @@
+button {
+  background-color: rgb(42, 142, 65);
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  border-radius: 10px;
+  color: rgb(233, 251, 235);
+  letter-spacing: 0.05rem;
+  border-style: none;
+  height: 3.1rem;
+}
+
+button:hover {
+  box-shadow: 6px 6px 10px rgb(42, 142, 65);
+  cursor: pointer;
+  font-size: 1.3rem;
+}
