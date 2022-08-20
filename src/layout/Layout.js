@@ -1,12 +1,13 @@
 import React from "react";
 import Carousel from "./../components/carousel/Carousel";
 import "./Layout.css";
+import Navbar from "./../components/navbar/Navbar";
 
 function Layout() {
   return (
     <div className="container">
       {/* logo, navbar y carrito de compras */}
-      <header className="header">header</header>
+      <header className="header"><Navbar /></header>
       <main className="main">
         {/* Hero */}
         <section className="hero">Hero</section>
