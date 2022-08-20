@@ -1,4 +1,5 @@
 import React from "react";
+import { About } from "../components/about/About";
 import Carousel from "./../components/carousel/Carousel";
 import "./Layout.css";
 
@@ -13,7 +14,7 @@ function Layout() {
         {/* Cards */}
         <section className="cards">Cards</section>
         {/* About */}
-        <section className="about">About</section>
+        <section className="about"><About/></section>
         {/* carousel */}
         <section className="carousel">
           <Carousel />
