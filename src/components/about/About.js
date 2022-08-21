@@ -9,6 +9,7 @@ export const About = () => {
 <div className="about-texto">
 
       <h2>Sobre nosotros</h2>
+      <p>Spirits es una empresa que comercializa bebidas blancas desde 2022</p>
 
       <p>Nuestra misión es brindar una experiencia única que permita a nuestro cliente disfrutar de las bebidas con todos sus sentidos.</p>
 
