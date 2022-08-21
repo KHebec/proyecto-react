@@ -1,9 +1,6 @@
 import React from 'react'
 import Card from './Card'
 
-const cards = [
-
-]
 function Cards() {
     return (
         <div className="container d-flex justify-content-center align-items-center h-100 ">
