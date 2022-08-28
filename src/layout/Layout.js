@@ -1,9 +1,7 @@
 import React from "react";
 import Carousel from "./../components/carousel/Carousel";
 import "./Layout.css";
-import { Button } from "../components/button/Button";
 import Footer from "../components/footer/Footer";
-import ScrollButton from "../components/scroolbutton/ScrollButton";
 import Navbar from "../components/navbar/Navbar";
 
 function Layout() {

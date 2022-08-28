@@ -1,4 +1,4 @@
-[
+{"products":[
 {
     "id": 1,
     "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
@@ -112,5 +112,5 @@
     "stock": 20,
     "content" : 1
 }
-]
+]}
     
