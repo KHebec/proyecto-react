@@ -8,17 +8,17 @@ Inicia el modo de ddesarrollo
 
 Abrir [http://localhost:3000](http://localhost:3000) para ver en su navegador 
 
-### `Tecnologías y recursos aplicados`
+## `Tecnologías y recursos aplicados`
 
-## `Footer`
+### `Footer`
 styled components
 font-awesome
 
-## `Navbar`
+### `Navbar`
 
 css vainilla
 
-## `Carousel`
+### `Carousel`
 
 Alice carousel
 json-server
