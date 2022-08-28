@@ -1,0 +1,154 @@
+.Navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Navbar > .nav-logo {
+  margin: 15px;
+  width: 85px;
+}
+
+.Navbar > .nav-items > a {
+  color: #004225;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 15px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.Navbar > .nav-items > a:hover {
+  opacity: 1;
+  text-shadow: 6px 6px 4px #004225;
+}
+
+.Navbar > .nav-items > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #efffef;
+  transition: all 0.45s;
+}
+
+.Navbar > .nav-items > a:hover::before {
+  width: 100%;
+}
+
+.Navbar > .icons {
+  font-size: 1.4rem;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Navbar > .icons > i {
+  color: #004225;
+}
+
+.Navbar > .nav-toggle {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .Navbar > .nav-items {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    background: #004225;
+    left: 20px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 80px);
+    transform: translateX(calc(-100vw));
+    opacity: 0.9;
+    z-index: 10;
+  }
+  .Navbar > .nav-logo {
+    margin: 10px;
+    width: 75px;
+  }
+  .Navbar > .icons {
+    font-size: 1.1rem;
+    width: 40%;
+  }
+
+  .Navbar > .nav-items > a {
+    color: #efffef;
+    line-height: 1.5rem;
+  }
+
+  .Navbar > .nav-items > a:hover {
+    opacity: 1;
+    text-shadow: 6px 6px 8px #002105;
+    font-size: 1.4rem;
+  }
+
+  .Navbar > .nav-items > a::before {
+    background: transparent;
+  }
+
+  .Navbar > .nav-items.open {
+    transform: translateX(0);
+    transition-duration: 350ms;
+  }
+
+  .Navbar > .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: #004225;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle > .bar {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #004225;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .nav-toggle > .bar::before,
+  .nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #004225;
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .nav-toggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+  }
+
+  .nav-toggle > .bar::after {
+    width: 32px;
+    transform: translateY(8px);
+  }
+
+  .nav-toggle.open > .bar {
+    transform: translateX(-40px);
+    background: transparent;
+  }
+
+  .nav-toggle.open > .bar::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+  }
+
+  .nav-toggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+}
