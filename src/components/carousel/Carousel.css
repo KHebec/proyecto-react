@@ -1,5 +1,4 @@
 .alice-carousel {
-  background-color: rgb(207, 252, 212);
   padding-top: 20px;
   border-radius: 10px;
 }
@@ -14,19 +13,18 @@
   max-width: 100%;
   object-fit: contain;
   padding: 1rem;
-  border: solid 1px rgb(42, 142, 65);
+  border: solid 1px #004225;
   border-radius: 0.5rem;
   background-color: white;
   opacity: 0.9;
-  box-shadow: 6px 6px 10px rgb(42, 142, 65);
-  filter: grayscale(0.6);
+  filter: grayscale(0.7);
 }
 .img-gallery:hover {
   opacity: 1;
   height: 255px;
   filter: grayscale(0);
+  box-shadow: 6px 6px 10px #004225;
 }
-
 .info-product,
 .product-content,
 .product-price {
@@ -64,5 +62,9 @@
 @media screen and (max-width: 519px) {
   .alice-carousel__stage-item {
     text-align: center;
+  }
+  .alice-carousel__dots-item {
+    padding-bottom: 4px;
+    padding-inline: 2px;
   }
 }
