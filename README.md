@@ -11,7 +11,9 @@ Abrir [http://localhost:3000](http://localhost:3000) para ver en su navegador
 ## `Tecnologías y recursos aplicados`
 
 ### `Footer`
+
 styled components
+
 font-awesome
 
 ### `Navbar`
@@ -21,6 +23,8 @@ css vainilla
 ### `Carousel`
 
 Alice carousel
+
 json-server
+
 Axios
 

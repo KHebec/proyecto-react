@@ -7,7 +7,7 @@ import GetProducts from "../../hooks/GetProducts";
 const Carousel = () => {
   const handleDragStart = (e) => e.preventDefault();
   const { data } = GetProducts("http://localhost:7000/products");
-  console.log(data);
+
   const items = data.map((e) => (
     <div>
       <img

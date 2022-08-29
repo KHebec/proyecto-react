@@ -4,3 +4,6 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+.container {
+  margin-inline: 20px;
+}
