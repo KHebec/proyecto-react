@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import logo from "./../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,11 @@ const Navbar = () => {
     <div className="Navbar">
       <img className="nav-logo" src={logo} alt="logo" />
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
-        <a href="/about">Sobre Nosotros</a>
-        <a href="/products">Productos</a>
-        <a href="/contact">Sucursales</a>
-        <a href="/others">Otros</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">Sobre Nosotros</Link>
+        <Link to="/products">Productos</Link>
+        <Link to="/sucursales">Sucursales</Link>
+        <Link to="/others">Otros</Link>
       </div>
       <div className="icons">
         <i className="fas fa-search"></i>

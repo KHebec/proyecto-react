@@ -14,6 +14,7 @@
 .Navbar > .nav-items > a {
   color: #004225;
   font-size: 1.3rem;
+  line-height: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   margin: 15px;
@@ -23,22 +24,7 @@
 
 .Navbar > .nav-items > a:hover {
   opacity: 1;
-  text-shadow: 6px 6px 4px #004225;
-}
-
-.Navbar > .nav-items > a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: #efffef;
-  transition: all 0.45s;
-}
-
-.Navbar > .nav-items > a:hover::before {
-  width: 100%;
+  text-decoration: 3px underline #004225;
 }
 
 .Navbar > .icons {
