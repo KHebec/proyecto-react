@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   background: #004225;
-  position: fixed;
-  bottom: 0;
-  width: calc(100% - 40px);
+  width: calc(100%);
   display: flex;
   flex-direction: column;
 `;
