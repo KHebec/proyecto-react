@@ -1,10 +1,10 @@
 .Navbar {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background: #004225;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
   }
   
   .Navbar > .nav-logo {
@@ -26,14 +26,14 @@
   }
   
   .Navbar > .nav-items > a::before {
+    bottom: 0;
+    background: #ffffff;
     content: "";
+    height: 2px;
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: #ffffff;
     transition: all 0.45s;
+    width: 0;
   }
   
   .Navbar > .nav-items > a:hover::before {
@@ -62,7 +62,7 @@
     }
   
     .Navbar > .nav-items > a::before {
-        background: transparent;
+      background: transparent;
     }
   
     .Navbar > .nav-items.open {
