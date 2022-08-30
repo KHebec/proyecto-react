@@ -1,19 +1,20 @@
 import React from 'react'
-import img1 from '../assets/img1.jpg'
+import { Button } from './Button'
 import './cards.css'
-function Card() {
+function Card({brand,image,price}) {
   return (
     <div className="card text-center">
-      <img src={img1} alt="" className="card-img-top"/>
+      <figure className='img-container'>
+      <img src={image} alt="" className="card-img-top"/>
+      </figure>
+    
       <div className="card-body">
-        <h4 className="card-title">
-          My title
+        <h4 className="card-title ">
+         {brand}
         </h4>
-        <p className="card-text text-secondary"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore earum, consectetur quaerat optio aperiam ea omnis asperiores distinctio aut molestiae impedit aliquid eaque aliquam autem nesciunt a. Ullam, corporis.
+        <p className="card-text text-secondary"> {price}
         </p>
-        <a href= "#!" className= "btn btn-outline-secondary rounded-0">
-          Go to this website
-        </a>
+        <Button name={"Comprar"}/>
 
       </div>
     </div>
