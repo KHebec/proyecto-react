@@ -7,7 +7,7 @@ color: green;
 
 export const Content = styled.div`
 overflowY: scroll;
-height: 2500px;
+height: 1500px;
 `;
 
 export const Button = styled.div`

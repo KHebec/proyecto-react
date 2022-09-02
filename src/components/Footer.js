@@ -39,7 +39,9 @@ return (
 		</div>
 		<Container className='Container' style={{padding:"4% 0% 0% 0%", margin: "0% 0% 5% 0%"}}>
 			<Row>
-				<img src={Iconos.img5} key="Logo" alt="Logo" style={{ width: "60%", heigth: "60%", marginLeft: "20%"}}/>
+				<Column>
+				<img src={Iconos.img5} key="Logo" alt="Logo" style={{ width: "50%", heigth: "50%", marginLeft: "15%", paddingTop: "13%" }}/>
+				</Column>
 				<Column>
 					<Heading>Sobre Nosotros</Heading>
 					<FooterLink href="#">Nosotros</FooterLink>
