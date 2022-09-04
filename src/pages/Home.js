@@ -1,6 +1,8 @@
+import Partner from "../components/banner/Partner";
 import Carousel from "../components/carousel/Carousel";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import ScrollButton from "../components/scroolbutton/ScrollButton";
 
 const Home = () => {
   return (
@@ -15,14 +17,15 @@ const Home = () => {
         {/* Cards */}
         <section className="cards"></section>
         {/* About */}
-        <section className="about"></section>
-        {/* carousel */}
+        <section className="partner"></section>
+        <Partner />
         <section className="carousel">
           <Carousel />
         </section>
       </main>
       {/* footer */}
       <footer className="footer">
+        <ScrollButton />
         <Footer />
       </footer>
     </div>
