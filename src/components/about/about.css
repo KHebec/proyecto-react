@@ -1,0 +1,25 @@
+.about-container{
+    display: flex; 
+}
+
+.about-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-texto p{
+    margin-inline: 50px;
+}
+
+.about-texto h2{
+    font-family: "Eczar";
+    color: #004225;
+}
+
+.about-img{
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+}

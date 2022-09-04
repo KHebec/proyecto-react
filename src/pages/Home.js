@@ -1,6 +1,7 @@
 import Carousel from "../components/carousel/Carousel";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import Aboutus from "../components/about/Aboutus"
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         {/* Cards */}
         <section className="cards"></section>
         {/* About */}
-        <section className="about"></section>
+        <section className="about"><Aboutus /></section>
         {/* carousel */}
         <section className="carousel">
           <Carousel />
