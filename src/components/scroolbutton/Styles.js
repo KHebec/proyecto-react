@@ -7,14 +7,14 @@ export const Heading = styled.h1`
 
 export const Content = styled.div`
   overflowy: scroll;
-  height: 2500px;
+  height: 1500px;
 `;
 
 export const Button = styled.div`
   position: fixed;
   width: 90%;
   left: 50%;
-  bottom: 40px;
+  bottom: 50px;
   height: 20px;
   font-size: 3rem;
   z-index: 1;
