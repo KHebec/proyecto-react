@@ -7,12 +7,20 @@ position: absolute;
 bottom: 1;
 width: 100%;
 
-@media (max-width: 1000px) {
-	padding: 70px 30px;
+@media (max-width: 1024px) {
+	padding: 10px 10px;
 }
 
-@media (max-width: 500px) {
-	padding: 70px 30px;
+@media (max-width: 768px) {
+	padding: 10px 10px;
+}
+
+@media (max-width: 480px) {
+	padding: 10px 10px;
+}
+
+@media (max-width: 320px) {
+	padding: 10px 10px;
 }
 `;
 
@@ -29,6 +37,31 @@ display: flex;
 flex-direction: column;
 text-align: left;
 margin-left: 60px;
+align-items: center;
+
+@media (max-width: 1024px) {
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	align-items: center;
+}
+
+@media (max-width: 480px) {
+	padding: 0% 0% 3% 0%;
+	margin: 5% 0% 0% 0%;
+	align-items: center;
+}
+
+@media (max-width: 320px) {
+	padding: 10% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	align-items: center;
+}
 `;
 
 export const Row = styled.div`
@@ -37,14 +70,26 @@ grid-template-columns: repeat(4, 1fr);
 /*repeat(auto-fill, minmax(185px, 1fr));*/
 grid-gap: 20px;
 
-@media (max-width: 1000px) {
-	grid-template-columns: repeat(2, 1fr);
-/*repeat(auto-fill,	minmax(200px, 1fr));*/
+@media (max-width: 1024px) {
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	grid-gap: 0px;
 }
 
-@media (max-width: 500px) {
-	grid-template-columns: repeat(auto-fill,
-						minmax(200px, 1fr));
+@media (max-width: 768px) {
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+	grid-gap: 0px;
+}
+
+@media (max-width: 480px) {
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
+}
+
+@media (max-width: 320px) {
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
 }
 `;
 
@@ -62,11 +107,30 @@ text-decoration: none;
 	font-weight: bold;
 
 }
+
+@media (max-width: 480px) {
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
+}
+
+@media (max-width: 320px) {
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
+}
 `;
 
 export const Heading = styled.p`
 font-size: 24px;
 color: #004225; /*letras abajo antes era fff*/
-margin-bottom: 40px;
+margin-bottom: 20px;
 font-weight: bold;
+
+@media (max-width: 320px) {
+	font-size: 20px;
+}
+`;
+
+export const Images = styled.img`
+
+
 `;

@@ -18,21 +18,21 @@ const Partner = () => {
                 <Column>
                     <FooterLink href="https://whiskymaltargentina.com/" target="_blank">
                         <i>
-                                <img src={Iconos.img8} key="abcd" style={{ marginLeft: "20px", width:"30%", heigth: "30%", padding:"0% 0% 0% 10%"}}/>
+                            <img src={Iconos.img8} key="abcd" style={{width:"100%", heigth: "100%", margin: "0% 0% 0% 0%"}}/>
                         </i>
                     </FooterLink>
                 </Column>
                 <Column>
                     <FooterLink href="http://www.aasommeliers.com.ar/nosotros/" target="_blank">
                         <i>
-                            <img src={Iconos.img9} key="abc" style={{ marginLeft: "100px",  width:"40%", heigth: "40%"}}/>
+                            <img src={Iconos.img9} key="abc" style={{width:"100%", heigth: "100%", margin: "0% 0% 0% 0%"}}/>
                         </i>
                     </FooterLink>
                 </Column>
                 <Column>
                     <FooterLink href="https://fada-argentina.org.ar/" target="_blank">
                         <i>
-                            <img src={Iconos.img10} key="abcde" target="_blank" style={{ marginLeft: "100px",  width:"30%", heigth: "30%"}}/>
+                            <img src={Iconos.img10} key="abcde" target="_blank" style={{width:"60%", heigth: "60%", margin: "0% 0% 0% 20%"}}/>
                         </i>
                     </FooterLink>
                 </Column>

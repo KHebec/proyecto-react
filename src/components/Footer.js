@@ -7,40 +7,53 @@ Row,
 Column,
 FooterLink,
 Heading,
+Images,
 } from "./FooterStyles";
 
 const Footer = () => {
 return (
 	<Box>
+		<Container>
 		<div className= 'HeadFoot' style={{ backgroundImage: `url(${Iconos.img6})`, padding:"5% 0% 5% 0%"}}>
 			<h1 style={{ color: "#000", textAlign: "center", margin: "0% 0% 5% 0%"}}>
 				Siguenos en nuestras Redes Sociales!
 			</h1>
+			<Row>
+				<Column>
 			<FooterLink href="https://es-la.facebook.com/" target="_blank">
-					<i className="FaFacebookSquare">
-						<img src={Iconos.img1} key="Face" alt="Facebook" style={{ marginLeft: "10px" }}/>
+					<i className="face">
+						<Images src={Iconos.img1} key="Face" alt="Facebook" style={{ marginLeft: "10px" }}/>
 					</i>
 			</FooterLink>
+			</Column>
+			<Column>
 			<FooterLink href="https://www.instagram.com/?hl=es-la" target="_blank">
-					<i className="fab fa-instagram">
-					<img src={Iconos.img2} key="Inst" alt="Instagram" style={{ marginLeft: "100px" }}/>
+					<i className="insta">
+						<Images src={Iconos.img2} key="Inst" alt="Instagram" style={{ marginLeft: "10px" }}/>
 					</i>
 			</FooterLink>
+			</Column>
+			<Column>
 			<FooterLink href="https://twitter.com/?lang=es" target="_blank">
-					<i className="fab fa-twitter">
-					<img src={Iconos.img3} key="Twit" alt="twitter" target="_blank" style={{ marginLeft: "100px" }}/>
+					<i className="twit">
+						<Images src={Iconos.img3} key="Twit" alt="twitter" target="_blank" style={{ marginLeft: "0px" }}/>
 					</i>
 			</FooterLink>
+			</Column>
+			<Column>
 			<FooterLink href="https://web.whatsapp.com/"  target="_blank">
-					<i className="fab fa-whatsup">
-					<img src={Iconos.img4} key="WP" alt="WhatsUpp" style={{ marginLeft: "100px" }}/>
+					<i className="wsup">
+						<Images src={Iconos.img4} key="WP" alt="WhatsUpp" style={{ marginLeft: "0px" }}/>
 					</i>
 			</FooterLink>
+			</Column>
+			</Row>
 		</div>
+		</Container>
 		<Container className='Container' style={{padding:"4% 0% 0% 0%", margin: "0% 0% 5% 0%"}}>
 			<Row>
 				<Column>
-				<img src={Iconos.img5} key="Logo" alt="Logo" style={{ width: "50%", heigth: "50%", marginLeft: "15%", paddingTop: "13%" }}/>
+				<img src={Iconos.img5} key="Logo" alt="Logo" style={{ width: "50%", heigth: "50%", marginLeft: "5%", paddingTop: "13%" }}/>
 				</Column>
 				<Column>
 					<Heading>Sobre Nosotros</Heading>
