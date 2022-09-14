@@ -8,19 +8,19 @@ bottom: 1;
 width: 100%;
 
 @media (max-width: 1024px) {
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 
 @media (max-width: 768px) {
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 
 @media (max-width: 480px) {
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 
 @media (max-width: 320px) {
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 `;
 
