@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { ShoppingContext } from "./../../context/ShoppingContext";
+import { useModal } from "../../hooks/useModal";
 import CardProduct from "./CardProduct";
+import CartEmpty from "../cart/CartEmpty";
+import Cart
 import "./BuyProducts.css";
 
 const BuyProducts = () => {
