@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-<<<<<<< HEAD
   position: absolute;
   bottom: 1;
   width: calc(100% - 40px);
@@ -14,10 +13,6 @@ export const Box = styled.div`
   }
 `;
 export const SocialLink = styled.div`
-=======
-  background: #004225;
-  width: calc(100%);
->>>>>>> 4972dca7a6ffabe8fcd3feebf9c6c7f134dca6cf
   display: flex;
   justify-content: center;
   gap: 30px;

@@ -1,5 +1,4 @@
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 
 const Others = () => {
   return (
@@ -8,9 +7,7 @@ const Others = () => {
         <Navbar />
       </header>
       <section>Otros</section>
-      <footer>
-        <Footer />
-      </footer>
+      <footer></footer>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Footer = () => {
       <div
         className="HeadFoot"
         style={{
-          backgroundColor: "#bbddbb",
+          backgroundImage: `url(${Iconos.img7})`,
           padding: "5% 0% 5% 0%",
           display: "flex",
           flexDirection: "column",

@@ -1,5 +1,4 @@
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 
 const Sucursales = () => {
   return (
@@ -8,9 +7,7 @@ const Sucursales = () => {
         <Navbar />
       </header>
       <section>Sucursales</section>
-      <footer>
-        <Footer />
-      </footer>
+      <footer></footer>
     </div>
   );
 };

@@ -19,7 +19,9 @@ const Navbar = () => {
       <div className="icons">
         <i className="fas fa-search"></i>
         <i className="fas fa-user-alt"></i>
-        <i className="fas fa-shopping-cart"></i>
+        <i className="fas fa-shopping-cart">
+          <div className="circle-quantity"></div>{" "}
+        </i>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

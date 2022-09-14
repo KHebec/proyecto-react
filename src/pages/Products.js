@@ -1,5 +1,5 @@
+import BuyProducts from "../components/buyproducts/BuyProducts";
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 
 const Products = () => {
   return (
@@ -7,10 +7,10 @@ const Products = () => {
       <header>
         <Navbar />
       </header>
-      <section>Productos</section>
-      <footer>
-        <Footer />
-      </footer>
+      <section>
+        <BuyProducts />
+      </section>
+      <footer></footer>
     </div>
   );
 };
