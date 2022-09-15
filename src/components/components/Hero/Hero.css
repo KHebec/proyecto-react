@@ -1,0 +1,28 @@
+.hero-container {
+height: 100vh;
+width: 100%;
+object-fit: contain;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'Montserrat', sans-serif;
+}
+.video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.hero-container > h1 {
+    color: white;
+    font-size: 120px;
+
+}
+
+.hero-container > p {
+    margin-top: 8px;
+    color: white;
+    font-size: 32px;
+}
