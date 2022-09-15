@@ -1,15 +1,16 @@
 import { useContext } from "react";
 import { ShoppingContext } from "./../../context/ShoppingContext";
 import { useModal } from "../../hooks/useModal";
+import ModalCart from "../cart/ModalCart";
 import CardProduct from "./CardProduct";
 import CartEmpty from "../cart/CartEmpty";
 import CartItem from "../cart/CartItem";
 import "./BuyProducts.css";
-import Loading from "./Loading";
 
 const BuyProducts = () => {
   const data = useContext(ShoppingContext);
-  const { products, addToCart } = data;
+  const { products, cart, addToCart, deleteFromCart, cleanCart } = data;
+  const [isOpenModal, openModal, closeModal] = useModal(false);
 
   return (
     <>
@@ -26,7 +27,7 @@ const BuyProducts = () => {
         </div>
         <button onClick={openModal}>Abrir Carrito de compras</button>
       </section>
-      <Modal isOpen={isOpenModal} closeModal={closeModal}>
+      <ModalCart isOpen={isOpenModal} closeModal={closeModal}>
         {cart.length === 0 && <CartEmpty closeModal={closeModal} />}
         {cart.length !== 0 && (
           <>
@@ -82,7 +83,7 @@ const BuyProducts = () => {
             </section>
           </>
         )}
-      </Modal>
+      </ModalCart>
     </>
   );
 };

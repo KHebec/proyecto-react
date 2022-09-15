@@ -107,6 +107,14 @@
       "price": "7580",
       "content": 1,
       "quantity": 1
+    },
+    {
+      "id": 14,
+      "image": "https://bachelordrinks.com.ar/wp-content/uploads/2020/08/productos-vodka-01.jpg",
+      "name": "vodka Pravda",
+      "price": "11970",
+      "content": 1,
+      "quantity": 2
     }
   ]
 }
