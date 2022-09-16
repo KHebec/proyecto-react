@@ -2,7 +2,7 @@ import Navbar from "../components/navbar/Navbar";
 
 const Others = () => {
   return (
-    <div className="container">
+    <div>
       <header>
         <Navbar />
       </header>

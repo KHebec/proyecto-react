@@ -1,88 +1,105 @@
-import React from "react";
-import Iconos from "../iconos/Iconos";
+import face from "../../assets/images/fb2.png";
+import inst from "../../assets/images/ig2.png";
+import twit from "../../assets/images/tw2.png";
+import wp from "../../assets/images/wp2.png";
+import logo from "../../assets/images/logo.svg";
+import fondo from "../../assets/images/fondo4.jpg";
 import {
   Box,
-  SocialLink,
   Container,
   Row,
   Column,
   FooterLink,
   Heading,
+  Images,
 } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <Box>
-      <div
-        className="HeadFoot"
-        style={{
-          backgroundImage: `url(${Iconos.img7})`,
-          padding: "5% 0% 5% 0%",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <h1
-          style={{ color: "#000", textAlign: "center", margin: "0% 0% 5% 0%" }}
+      <Container>
+        <div
+          className="HeadFoot"
+          style={{
+            backgroundImage: `url(${fondo})`,
+            padding: "5% 0% 5% 0%",
+          }}
         >
-          Síguenos en nuestras Redes Sociales!!
-        </h1>
-        <SocialLink>
-          <FooterLink href="https://es-la.facebook.com/" target="_blank">
-            <i>
-              <img
-                src={Iconos.img1}
-                key="Face"
-                alt="Facebook"
-                className="image"
-              />
-            </i>
-          </FooterLink>
-          <FooterLink
-            href="https://www.instagram.com/?hl=es-la"
-            target="_blank"
-            rel="noreferrer"
+          <h1
+            style={{
+              color: "#000",
+              textAlign: "center",
+              margin: "0% 0% 5% 0%",
+            }}
           >
-            <i>
-              <img
-                src={Iconos.img2}
-                key="Inst"
-                alt="Instagram"
-                style={{ marginLeft: "100px" }}
-              />
-            </i>
-          </FooterLink>
-          <FooterLink
-            href="https://twitter.com/?lang=es"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i>
-              <img
-                src={Iconos.img3}
-                key="Twit"
-                alt="twitter"
+            Siguenos en nuestras Redes Sociales!
+          </h1>
+          <Row>
+            <Column>
+              <FooterLink
+                href="https://es-la.facebook.com/"
                 target="_blank"
-                style={{ marginLeft: "100px" }}
-              />
-            </i>
-          </FooterLink>
-          <FooterLink
-            href="https://web.whatsapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i>
-              <img
-                src={Iconos.img4}
-                key="WP"
-                alt="WhatsUpp"
-                style={{ marginLeft: "100px" }}
-              />
-            </i>
-          </FooterLink>
-        </SocialLink>
-      </div>
+                rel="noreferrer"
+              >
+                <i className="face">
+                  <Images
+                    src={face}
+                    key="Face"
+                    alt="Facebook"
+                    style={{ marginLeft: "10px" }}
+                  />
+                </i>
+              </FooterLink>
+            </Column>
+            <Column>
+              <FooterLink
+                href="https://www.instagram.com/?hl=es-la"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="insta">
+                  <Images
+                    src={inst}
+                    key="Inst"
+                    alt="Instagram"
+                    style={{ marginLeft: "10px" }}
+                  />
+                </i>
+              </FooterLink>
+            </Column>
+            <Column>
+              <FooterLink href="https://twitter.com/?lang=es" target="_blank">
+                <i className="twit">
+                  <Images
+                    src={twit}
+                    key="Twit"
+                    alt="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ marginLeft: "0px" }}
+                  />
+                </i>
+              </FooterLink>
+            </Column>
+            <Column>
+              <FooterLink
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="wsup">
+                  <Images
+                    src={wp}
+                    key="WP"
+                    alt="WhatsUpp"
+                    style={{ marginLeft: "0px" }}
+                  />
+                </i>
+              </FooterLink>
+            </Column>
+          </Row>
+        </div>
+      </Container>
       <Container
         className="Container"
         style={{ padding: "4% 0% 0% 0%", margin: "0% 0% 5% 0%" }}
@@ -90,13 +107,13 @@ const Footer = () => {
         <Row>
           <Column>
             <img
-              src={Iconos.img5}
+              src={logo}
               key="Logo"
               alt="Logo"
               style={{
-                width: "30%",
-
-                marginLeft: "15%",
+                width: "50%",
+                heigth: "50%",
+                marginLeft: "5%",
                 paddingTop: "13%",
               }}
             />
@@ -124,7 +141,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div
-        className="Copyright"
+        className="text-center"
         style={{ backgroundColor: "#004225", color: "white" }}
       >
         © 2022 Copyright
