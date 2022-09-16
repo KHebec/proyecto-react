@@ -144,7 +144,7 @@ const Footer = () => {
         className="text-center"
         style={{ backgroundColor: "#004225", color: "white" }}
       >
-        © 2022 Copyright
+        Copyright© 2022 :
         <a
           className="text-white"
           href="https://github.com/Aranwill"
@@ -152,7 +152,7 @@ const Footer = () => {
           rel="noreferrer"
           style={{ color: "white" }}
         >
-          : DOIT BY Aranwill
+          Aranwill
         </a>
         <a
           className="text-white"
@@ -197,7 +197,7 @@ const Footer = () => {
           rel="noreferrer"
           style={{ color: "white" }}
         >
-          . See our proyect.
+          . See our project.
         </a>
       </div>
     </Box>
