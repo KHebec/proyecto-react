@@ -1,10 +1,12 @@
 import React from "react";
-import "./Button.css";
 
-export const Button = (props) => {
+export const Button = ({ click, className, name }) => {
   return (
-    <div className="container">
-      <button onClick={props.onclik}>{props.name}</button>
-    </div>
+    <button
+      onClick={click}
+      className="p-2 font-bold border-2 text-white rounded-lg text-grey-500 bg-[#004225] hover:text-[#004225] hover:bg-white"
+    >
+      {name}
+    </button>
   );
 };

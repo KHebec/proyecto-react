@@ -1,16 +1,13 @@
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 
 const Others = () => {
   return (
-    <div className="container">
+    <div>
       <header>
         <Navbar />
       </header>
       <section>Otros</section>
-      <footer>
-        <Footer />
-      </footer>
+      <footer></footer>
     </div>
   );
 };

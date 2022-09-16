@@ -1,5 +1,5 @@
 .alice-carousel {
-  padding-top: 20px;
+  padding: 40px 0;
   border-radius: 10px;
 }
 .alice-carousel__stage-item {
@@ -24,29 +24,6 @@
   height: 255px;
   filter: grayscale(0);
   box-shadow: 6px 6px 10px #004225;
-}
-.info-product,
-.product-content,
-.product-price {
-  margin-top: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.info-product {
-  color: rgb(8, 30, 13);
-  font-weight: bolder;
-  font-style: oblique;
-}
-
-.product-content {
-  font-size: 0.9rem;
-}
-
-.product-price {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: rgb(13, 77, 113);
 }
 
 .alice-carousel__dots-item {

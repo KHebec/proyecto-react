@@ -1,25 +1,23 @@
+import { useContext } from "react";
+import { ShoppingContext } from "../../context/ShoppingContext";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import React from "react";
 import "./Carousel.css";
-import GetProducts from "../../hooks/GetProducts";
 
 const Carousel = () => {
   const handleDragStart = (e) => e.preventDefault();
-  const { data } = GetProducts("http://localhost:7000/products");
+  const data = useContext(ShoppingContext);
+  const { products } = data;
 
-  const items = data.map((e) => (
+  const items = products.map((e) => (
     <div>
       <img
         src={e.image}
         key={e.id}
         onDragStart={handleDragStart}
-        alt={e.brand}
+        alt={e.name}
         className="img-gallery"
       />
-      <p className="info-product">{e.brand}</p>
-      <p className="product-content">{e.content * 1000} ml</p>
-      <p className="product-price">$ {e.price}</p>
     </div>
   ));
 
