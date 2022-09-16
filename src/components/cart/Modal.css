@@ -1,28 +1,27 @@
 .modal {
-  z-index: 999;
-  width: 100%;
+  position: absolute;
+  z-index:20;
+  top: 200px;
+  bottom: 20px;
   background-color: rgba(0, 0, 0, 0.75);
   display: none;
-  justify-content: center;
-  align-items: center;
+  border-color: black;
   
 }
 
 .modal-container {
-  width: 80%;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 1rem;
   background-color: #fff;
-  border-color: black;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
+  
 }
 
-.modal-close {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-}
+
 
 .modal.is-open {
   display: flex;

@@ -1,8 +1,10 @@
-const CartItem = ({ data, addToCart, deleteFromCart }) => {
+import { Button } from "../button/Button";
+
+const CartItem = ({ data, deleteFromCart }) => {
   const { id, name, price, quantity, image, category } = data;
 
   return (
-    <div className="flex justify-evenly p-4 gap-8 rounded-lg w-100 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
+    <div className="flex flex-col md:flex-row items-center justify-between md:justify-evenly lg:mx-32 xl:mx-64 p-4 gap-8 rounded-lg w-50 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
       <img src={image} alt={name} width={100} />
       <div className="flex flex-col items-center justify-evenly">
         <h5 className="font-bold ">{category}</h5>
@@ -11,19 +13,17 @@ const CartItem = ({ data, addToCart, deleteFromCart }) => {
         <h5>Cantidad: {quantity}</h5>
         <h5>Total: ${price * quantity}</h5>
       </div>
-      <div className="flex flex-col items-center justify-end">
-        <button
-          className="p-1 mt-4 font-bold text-black bg-orange-400 border-2 border-red-500 rounded"
-          onClick={() => deleteFromCart(id, false, quantity, data)}
-        >
-          Eliminar uno
-        </button>
-        <button
-          className="p-1 mt-4 font-bold text-red-500 border-2 border-red-500 rounded"
-          onClick={() => deleteFromCart(id, true)}
-        >
-          Eliminar
-        </button>
+      <div className="flex flex-col items-center justify-evenly">
+        <Button
+          name="Eliminar uno"
+          click={() => deleteFromCart(id, false, quantity, data)}
+          bg={"bg-[#bb695d]"}
+        />
+        <Button
+          name="Eliminar Todos"
+          click={() => deleteFromCart(id, true)}
+          bg={"bg-[#ee1111]"}
+        />
       </div>
     </div>
   );

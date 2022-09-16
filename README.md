@@ -1,30 +1,27 @@
 ### `npm server`
 
-Inicia json-server en puerto 7000 para acceder a los datos de db.json
+Inicia json-server en puerto 5000 para acceder a los datos de db.json
 
 ### `npm start`
 
-Inicia el modo de ddesarrollo
+Inicia el modo de desarrollo
 
-Abrir [http://localhost:3000](http://localhost:3000) para ver en su navegador 
+Abrir [http://localhost:3000](http://localhost:3000) para ver en su navegador
 
-## `Tecnologías y recursos aplicados`
+## `Librerías aplicadas`
 
-### `Footer`
+react-router-dom
+
+tailwind css
 
 styled components
 
 font-awesome
 
-### `Navbar`
-
-css vainilla
-
-### `Carousel`
-
-Alice carousel
+react alice carousel
 
 json-server
 
 Axios
 
+react-icons

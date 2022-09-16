@@ -8,12 +8,16 @@ import logo from "./../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import CartEmpty from "../cart/CartEmpty";
 import CartItem from "../cart/CartItem";
+import { Button } from "../button/Button";
 
 const Navbar = () => {
   const data = useContext(ShoppingContext);
   const { cart, deleteFromCart, cleanCart } = data;
   const [isOpenModal, openModal, closeModal] = useModal(false);
   const [isOpen, setIsOpen] = useState(false);
+  const totalQuantity = cart.reduce((previous, current) => {
+    return Number(previous) + Number(current.quantity);
+  }, 0);
   return (
     <>
       <div className="Navbar">
@@ -29,7 +33,9 @@ const Navbar = () => {
           <i className="fas fa-search"></i>
           <i className="fas fa-user-alt"></i>
           <i onClick={openModal} className="relative fas fa-shopping-cart">
-            <div className="absolute circle-quantity"></div>{" "}
+            <div className="absolute text-center circle-quantity">
+              {totalQuantity}
+            </div>{" "}
           </i>
         </div>
         <div
@@ -44,7 +50,9 @@ const Navbar = () => {
         {cart.length !== 0 && (
           <div className="">
             <section>
-              <h2 className="my-4 text-xl font-bold text-center">Carrito</h2>
+              <h2 className="my-4 text-xl font-bold text-center">
+                Carrito de compras
+              </h2>
               <article className="flex flex-col gap-4">
                 {cart.map((item) => (
                   <CartItem
@@ -56,17 +64,19 @@ const Navbar = () => {
               </article>
             </section>
             <section className="flex flex-col items-center">
-              <button
-                className="w-32 p-1 mt-4 font-bold border-2 border-yellow-500 rounded text-grey-500"
-                onClick={() => {
-                  cleanCart(cart);
-                  closeModal();
-                }}
-              >
-                Limpiar Carrito
-              </button>
+              <div className="mx-auto my-2">
+                <Button
+                  name="Limpiar carrito de compras"
+                  click={() => {
+                    cleanCart(cart);
+                    closeModal();
+                  }}
+                  bg={"bg-yellow-600"}
+                />
+              </div>
+
               <br />
-              <h4 className="font-bold">
+              <h4 className="mb-4 font-bold">
                 {" "}
                 Precio total: ${" "}
                 <span className="text-xl">
@@ -78,7 +88,7 @@ const Navbar = () => {
                   }, 0)}
                 </span>
               </h4>
-              <h5 className="font-bold">
+              <h5 className="mb-4 font-bold">
                 Cantidad Total:{" "}
                 <span className="text-xl">
                   {cart.reduce((previous, current) => {
@@ -86,12 +96,7 @@ const Navbar = () => {
                   }, 0)}
                 </span>
               </h5>
-              <button
-                className="w-32 p-1 mt-4 font-bold text-center border-2 border-yellow-500 rounded"
-                onClick={closeModal}
-              >
-                Comprar
-              </button>
+              <Button name={"Comprar"} click={closeModal} />
             </section>
           </div>
         )}
