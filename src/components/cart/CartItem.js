@@ -3,7 +3,7 @@ const CartItem = ({ data, addToCart, deleteFromCart }) => {
 
   return (
     <div className="flex justify-evenly p-4 gap-8 rounded-lg w-100 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
-      <img src={image} alt={name} width={150} />
+      <img src={image} alt={name} width={100} />
       <div className="flex flex-col items-center justify-evenly">
         <h5 className="font-bold ">{category}</h5>
         <h5 className="font-bold">{name}</h5>
