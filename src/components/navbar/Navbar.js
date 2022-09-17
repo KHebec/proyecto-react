@@ -90,7 +90,7 @@ const Navbar = () => {
               <h5 className="mb-4 font-bold">
                 Cantidad Total: <span className="text-xl">{totalQuantity}</span>
               </h5>
-              <Button name={"Comprar"} click={closeModal} />
+              <Button name={"Agregar más productos"} click={closeModal} />
             </section>
           </div>
         )}

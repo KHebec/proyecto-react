@@ -4,7 +4,7 @@ const CartItem = ({ data, deleteFromCart, addToCart }) => {
   const { id, image, name, price, category, quantity } = data;
   const item = { ...data };
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between md:justify-evenly lg:mx-32 xl:mx-64 p-4 gap-8 rounded-lg w-50 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
+    <div className="flex flex-col md:flex-row items-center justify-between md:justify-evenly lg:mx-32 xl:mx-64 p-1 gap-4 rounded-lg w-50 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
       <img src={image} alt={name} width={100} />
       <div className="flex flex-col items-start justify-evenly">
         <h5 className="font-semibold">{category}</h5>

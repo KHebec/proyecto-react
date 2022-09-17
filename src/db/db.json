@@ -140,6 +140,24 @@
       "content": 1,
       "category": "whisky",
       "quantity": 1
+    },
+    {
+      "id": 6,
+      "image": "https://borrachines.com.ar/wp-content/uploads/2021/11/GIN-HENDRICKS-DRY-700-ML.jpg",
+      "name": "Hiram Hendricks Dry",
+      "price": "7850",
+      "content": 1,
+      "category": "gin",
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/550204/Gin-Hiram-Walker-Dry-1-L-1-248015.jpg?v=637056691359500000",
+      "name": "Hiram Walker Dry",
+      "price": "5970",
+      "content": 1,
+      "category": "gin",
+      "quantity": 2
     }
   ]
 }
