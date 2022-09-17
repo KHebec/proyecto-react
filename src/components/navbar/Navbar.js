@@ -26,8 +26,6 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">Sobre Nosotros</Link>
           <Link to="/products">Productos</Link>
-          <Link to="/sucursales">Sucursales</Link>
-          <Link to="/others">Otros</Link>
         </div>
         <div className="icons">
           <i className="fas fa-search"></i>
@@ -50,7 +48,7 @@ const Navbar = () => {
         {cart.length !== 0 && (
           <div className="">
             <section>
-              <h2 className="my-4 text-xl font-bold text-center">
+              <h2 className="my-4 text-xl font-bold text-center text-spirits">
                 Carrito de compras
               </h2>
               <article className="flex flex-col gap-4">
@@ -89,12 +87,7 @@ const Navbar = () => {
                 </span>
               </h4>
               <h5 className="mb-4 font-bold">
-                Cantidad Total:{" "}
-                <span className="text-xl">
-                  {cart.reduce((previous, current) => {
-                    return Number(previous) + Number(current.quantity);
-                  }, 0)}
-                </span>
+                Cantidad Total: <span className="text-xl">{totalQuantity}</span>
               </h5>
               <Button name={"Comprar"} click={closeModal} />
             </section>

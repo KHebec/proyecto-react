@@ -33,6 +33,7 @@ const Carousel = () => {
   return (
     <>
       <AliceCarousel
+        className="flex justify-center"
         mouseTracking
         disableButtonsControls
         items={items}

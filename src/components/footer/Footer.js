@@ -22,14 +22,16 @@ const Footer = () => {
           className="HeadFoot"
           style={{
             backgroundImage: `url(${fondo})`,
-            padding: "5% 0% 5% 0%",
+            paddingBlock: "30px",
           }}
         >
           <h1
             style={{
-              color: "#000",
+              color: "#004225",
               textAlign: "center",
-              margin: "0% 0% 5% 0%",
+              fontWeight: "bold",
+              fontSize: "1.2rem",
+              marginBottom: "20px",
             }}
           >
             Siguenos en nuestras Redes Sociales!
@@ -120,23 +122,39 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Sobre Nosotros</Heading>
-            <FooterLink href="#">Nosotros</FooterLink>
-            <FooterLink href="#">Nuestra Vision</FooterLink>
-            <FooterLink href="#">Testimonios</FooterLink>
-            <FooterLink href="#">FAQS</FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Nosotros
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Nuestra Vision
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              FAQS
+            </FooterLink>
           </Column>
           <Column>
             <Heading>Productos</Heading>
-            <FooterLink href="#">Whisky</FooterLink>
-            <FooterLink href="#">Gin</FooterLink>
-            <FooterLink href="#">Vodka</FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Whisky
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Gin
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Vodka
+            </FooterLink>
           </Column>
           <Column>
             <Heading>Sucursales</Heading>
-            <FooterLink href="#">CABA</FooterLink>
-            <FooterLink href="#">Mar del Plata</FooterLink>
-            <FooterLink href="#">Cordoba Capital</FooterLink>
-            <FooterLink href="#">Mendoza Capital</FooterLink>
+            <FooterLink className="font-bold" href="#">
+              CABA
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Mar del Plata
+            </FooterLink>
+            <FooterLink className="font-bold" href="#">
+              Mendoza Capital
+            </FooterLink>
           </Column>
         </Row>
       </Container>

@@ -6,6 +6,13 @@ module.exports = {
       grayscale: {
         50: "80%",
       },
+      colors: {
+        spirits: "#004225",
+      },
+    },
+    fontFamily: {
+      sans: ["Montserrat", "sans-serif"],
+      serif: ["Eczar", "serif"],
     },
   },
   plugins: [],

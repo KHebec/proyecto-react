@@ -4,6 +4,7 @@ import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
 import ScrollButton from "../components/scroolbutton/ScrollButton";
+import Partner from "../components/partner/Partner";
 
 const Home = () => {
   return (
@@ -16,12 +17,12 @@ const Home = () => {
         <section className="relative">
           <Hero />
         </section>
-        {/* Cards */}
-
-        <section className="partner"></section>
 
         <section className="relative">
           <Carousel />
+        </section>
+        <section>
+          <Partner />
         </section>
         <section>
           <About />

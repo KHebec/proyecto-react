@@ -1,78 +1,49 @@
-import fondoPartner from "../../assets/images/fondo3.jpg";
-import LAAS from "../../assets/images/Loaas.png";
+import LAAS from "../../assets/images/Laas.png";
 import LMW from "../../assets/images/LoMW.webp";
 import LFADA from "../../assets/images/Lfada.png";
-
-import { Box, Row, Column, FooterLink } from "./PartnerStyle";
+import "./partner.css";
 
 const Partner = () => {
   return (
-    <Box>
-      <div
-        className="HeadPartner"
-        style={{
-          backgroundImage: `url(${fondoPartner})`,
-          padding: "5% 0% 5% 0%",
-        }}
-      >
-        <h1
-          style={{ color: "#000", textAlign: "center", margin: "0% 0% 6% 0%" }}
-        >
-          Estamos asociados:
-        </h1>
-        <Row>
-          <Column>
-            <FooterLink href="https://whiskymaltargentina.com/" target="_blank">
-              <i>
-                <img
-                  src={LMW}
-                  key="abcd"
-                  style={{
-                    width: "100%",
-                    heigth: "100%",
-                    margin: "0% 0% 0% 0%",
-                  }}
-                />
-              </i>
-            </FooterLink>
-          </Column>
-          <Column>
-            <FooterLink
-              href="http://www.aasommeliers.com.ar/nosotros/"
-              target="_blank"
-            >
-              <i>
-                <img
-                  src={LAAS}
-                  key="abc"
-                  style={{
-                    width: "100%",
-                    heigth: "100%",
-                    margin: "0% 0% 0% 0%",
-                  }}
-                />
-              </i>
-            </FooterLink>
-          </Column>
-          <Column>
-            <FooterLink href="https://fada-argentina.org.ar/" target="_blank">
-              <i>
-                <img
-                  src={LFADA}
-                  key="abcde"
-                  target="_blank"
-                  style={{
-                    width: "60%",
-                    heigth: "60%",
-                    margin: "0% 0% 0% 20%",
-                  }}
-                />
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-      </div>
-    </Box>
+    <div className="flex flex-col items-center h-64 bg-spirits w-vw ">
+      <h2 className="my-4 text-xl font-bold">Estamos asociados!!</h2>
+      <ul className="flex flex-col items-center justify-center w-full h-48 sm:flex-row sm:justify-evenly">
+        <li className=" w-30">
+          <a
+            href="https://whiskymaltargentina.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="w-20" src={LMW} key="abcd" alt="Museo del whisky" />
+          </a>
+        </li>
+        <li className=" w-30">
+          <a
+            href="http://www.aasommeliers.com.ar/nosotros/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="w-24"
+              src={LAAS}
+              key="abc"
+              alt="Asociación Argentina de Sommelier"
+            />
+          </a>
+        </li>
+
+        <li className=" w-30">
+          <a
+            href="https://fada-argentina.org.ar/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <img className="w-28" src={LFADA} key="abcde" alt="fada" />
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };
 

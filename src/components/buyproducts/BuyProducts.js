@@ -9,7 +9,9 @@ const BuyProducts = () => {
 
   return (
     <section>
-      <h2 className="my-4 mb-8 text-xl font-bold text-center">Productos</h2>
+      <h2 className="my-4 mb-8 text-xl font-bold text-center text-spirits">
+        Productos
+      </h2>
       <div className="flex flex-wrap gap-8 justify-evenly">
         {products.map((product) => (
           <CardProduct key={product.id} data={product} addToCart={addToCart} />
