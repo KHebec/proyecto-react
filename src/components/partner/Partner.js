@@ -5,7 +5,7 @@ import LFADA from "../../assets/images/Lfada.png";
 const Partner = () => {
   return (
     <div className="flex flex-col items-center pb-8 bg-spirits w-vw">
-      <h2 className="my-4 text-xl font-bold text-white">Estamos asociados!!</h2>
+      <h2 className="my-4 text-xl font-bold text-white">Estamos asociados</h2>
       <ul className="flex flex-col items-center justify-center w-full h-48 sm:flex-row sm:justify-evenly">
         <li className="my-2 w-30">
           <a

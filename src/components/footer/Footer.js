@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import face from "../../assets/images/fb2.png";
 import inst from "../../assets/images/ig2.png";
 import twit from "../../assets/images/tw2.png";
@@ -34,7 +35,7 @@ const Footer = () => {
               marginBottom: "20px",
             }}
           >
-            Siguenos en nuestras Redes Sociales!
+            Seguinos en nuestras Redes Sociales
           </h1>
           <Row>
             <Column>
@@ -44,12 +45,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <i className="face">
-                  <Images
-                    src={face}
-                    key="Face"
-                    alt="Facebook"
-                    style={{ marginLeft: "10px" }}
-                  />
+                  <Images src={face} key="Face" alt="Facebook" />
                 </i>
               </FooterLink>
             </Column>
@@ -60,12 +56,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <i className="insta">
-                  <Images
-                    src={inst}
-                    key="Inst"
-                    alt="Instagram"
-                    style={{ marginLeft: "10px" }}
-                  />
+                  <Images src={inst} key="Inst" alt="Instagram" />
                 </i>
               </FooterLink>
             </Column>
@@ -78,7 +69,6 @@ const Footer = () => {
                     alt="twitter"
                     target="_blank"
                     rel="noreferrer"
-                    style={{ marginLeft: "0px" }}
                   />
                 </i>
               </FooterLink>
@@ -90,22 +80,14 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <i className="wsup">
-                  <Images
-                    src={wp}
-                    key="WP"
-                    alt="WhatsUpp"
-                    style={{ marginLeft: "0px" }}
-                  />
+                  <Images src={wp} key="WP" alt="WhatsUpp" />
                 </i>
               </FooterLink>
             </Column>
           </Row>
         </div>
       </Container>
-      <Container
-        className="Container"
-        style={{ padding: "4% 0% 0% 0%", margin: "0% 0% 5% 0%" }}
-      >
+      <Container style={{ padding: "4% 0% 0% 0%", margin: "0% 0% 5% 0%" }}>
         <Row>
           <Column>
             <img
@@ -113,27 +95,32 @@ const Footer = () => {
               key="Logo"
               alt="Logo"
               style={{
-                width: "50%",
-                heigth: "50%",
-                marginLeft: "5%",
+                width: "80px",
+                marginInline: "auto",
                 paddingTop: "13%",
               }}
             />
           </Column>
           <Column>
-            <Heading>Sobre Nosotros</Heading>
+            <Link to="/about">
+              <Heading>Sobre Nosotros</Heading>
+            </Link>
+
             <FooterLink className="font-bold" href="#">
               Nosotros
             </FooterLink>
             <FooterLink className="font-bold" href="#">
-              Nuestra Vision
+              Nuestra Visión
             </FooterLink>
             <FooterLink className="font-bold" href="#">
               FAQS
             </FooterLink>
           </Column>
           <Column>
-            <Heading>Productos</Heading>
+            <Link to="/products">
+              <Heading>Productos</Heading>
+            </Link>
+
             <FooterLink className="font-bold" href="#">
               Whisky
             </FooterLink>
@@ -153,71 +140,17 @@ const Footer = () => {
               Mar del Plata
             </FooterLink>
             <FooterLink className="font-bold" href="#">
-              Mendoza Capital
+              Mendoza
             </FooterLink>
           </Column>
         </Row>
       </Container>
-      <div
-        className="text-center"
+      <p
+        className="py-1 text-xs text-center"
         style={{ backgroundColor: "#004225", color: "white" }}
       >
-        Copyright© 2022 :
-        <a
-          className="text-white"
-          href="https://github.com/Aranwill"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          Aranwill
-        </a>
-        <a
-          className="text-white"
-          href="https://github.com/Estebancolunga"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          , Estebancolunga
-        </a>
-        <a
-          className="text-white"
-          href="https://github.com/Humano4000"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          , Humano4000
-        </a>
-        <a
-          className="text-white"
-          href="https://github.com/nilia2020"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          , nilia2020
-        </a>
-        <a
-          className="text-white"
-          href="https://github.com/KHebec"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          , KHebec
-        </a>
-        <a
-          className="text-white"
-          href="https://github.com/KHebec/proyecto-react"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "white" }}
-        >
-          . See our project.
-        </a>
-      </div>
+        Copyright© 2022 Spirits
+      </p>
     </Box>
   );
 };

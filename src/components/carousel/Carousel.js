@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { StateContext } from "../../context/StateContext";
 import AliceCarousel from "react-alice-carousel";
+import { Link } from "react-router-dom";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./Carousel.css";
 
@@ -10,15 +11,15 @@ const Carousel = () => {
   const { products } = data;
 
   const items = products.map((e) => (
-    <div>
+    <Link to="/products">
       <img
         src={e.image}
         key={e.id}
         onDragStart={handleDragStart}
         alt={e.name}
-        className="img-gallery"
+        className="cursor-pointer img-gallery"
       />
-    </div>
+    </Link>
   ));
 
   const responsive = {

@@ -4,7 +4,7 @@ const CardProduct = ({ data, addToCart }) => {
   const { name, price, image, content, category } = data;
 
   return (
-    <div className="flex flex-col items-center p-4 rounded-lg w-72 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
+    <article className="flex flex-col items-center p-4 rounded-lg w-72 border-2 border-[#004225] grayscale-50 hover:grayscale-0 hover:shadow-2xl ">
       <h5 className="mb-2 font-bold">{category}</h5>
       <h5 className="mb-2 font-bold">{name}</h5>
       <h5 className="mb-2 font-bold text-green-800">
@@ -24,7 +24,7 @@ const CardProduct = ({ data, addToCart }) => {
       </h5>
       <br />
       <Button name="Agregar al carrito" click={() => addToCart(name, data)} />
-    </div>
+    </article>
   );
 };
 

@@ -22,6 +22,7 @@ const Navbar = () => {
     <>
       <div className="Navbar">
         <img className="nav-logo" src={logo} alt="logo" />
+
         <div className={`nav-items ${isOpen && "open"}`}>
           <Link to="/">Home</Link>
           <Link to="/about">Sobre Nosotros</Link>

@@ -115,10 +115,28 @@
   ],
   "cart": [
     {
-      "id": 2,
-      "image": "https://vinotecamasis.com.ar/wp-content/uploads/2021/11/Whisky-Johnnie-Walker-Double-Black-750-ml.png",
-      "name": "Johnnie Walker",
-      "price": "12500",
+      "id": 11,
+      "image": "https://hiperlibertad.vteximg.com.br/arquivos/ids/170382-1000-1000/Vodka-Absolut-40-x-750cc-1-10567.jpg?v=637414119679130000",
+      "name": "Absolut",
+      "price": "10360",
+      "content": 0.75,
+      "category": "vodka",
+      "quantity": 3
+    },
+    {
+      "id": 9,
+      "image": "https://whiskypedia.com.ar/wp-content/uploads/2020/10/Moreira-final-1.jpg",
+      "name": "Moreira ",
+      "price": "9680",
+      "content": 1,
+      "category": "gin",
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
+      "name": "Ballentines",
+      "price": "5300",
       "content": 1,
       "category": "whisky",
       "quantity": 1
@@ -131,46 +149,43 @@
       "content": 1,
       "category": "whisky",
       "quantity": 1
-    },
-    {
-      "id": 6,
-      "image": "https://borrachines.com.ar/wp-content/uploads/2021/11/GIN-HENDRICKS-DRY-700-ML.jpg",
-      "name": "Hiram Hendricks Dry",
-      "price": "7850",
-      "content": 1,
-      "category": "gin",
-      "quantity": 1
-    },
-    {
-      "id": 5,
-      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/550204/Gin-Hiram-Walker-Dry-1-L-1-248015.jpg?v=637056691359500000",
-      "name": "Hiram Walker Dry",
-      "price": "5970",
-      "content": 1,
-      "category": "gin",
-      "quantity": 1
     }
   ],
   "authors": [
     {
       "id": 1,
-      "name": "Karen Carboni"
+      "name": "Karen Carboni",
+      "linkedin": "https://www.linkedin.com/in/karen-carboni/",
+      "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEakvbxBrzJCQ/profile-displayphoto-shrink_200_200/0/1598489492709?e=1668643200&v=beta&t=oDqkaTfBJvQC_wvZ5g9xcumLCftC_6NrWy3KMlDjOWs",
+      "github":"https://github.com/KHebec/proyecto-react"
     },
     {
       "id": 2,
-      "name": "Esteban Colunga"
+      "name": "Esteban Colunga",
+      "linkedin": "https://www.linkedin.com/in/esteban-colunga-58b085245/",
+      "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHS4Giwyo0x5w/profile-displayphoto-shrink_200_200/0/1662055711734?e=1668643200&v=beta&t=HgM3qp3uyqGh5GLNWUdQ7H0VaTgBpzHrcjInyGr5S0I",
+      "github":"https://github.com/Estebancolunga"
     },
     {
       "id": 3,
-      "name": "Walter Alejandro"
+      "name": "Walter Alejandro",
+      "linkedin": "https://www.linkedin.com/in/esteban-colunga-58b085245/",
+      "image": "",
+      "github":"https://github.com/Humano4000"
     },
     {
       "id": 4,
-      "name": "Héctor Rodríguez"
+      "name": "Héctor Rodríguez",
+      "linkedin": "https://www.linkedin.com/in/h%C3%A9ctor-rodr%C3%ADguez-00173b1b7/",
+      "image": "https://media-exp1.licdn.com/dms/image/C5603AQEhn1LSbBrCig/profile-displayphoto-shrink_200_200/0/1600294995225?e=1668643200&v=beta&t=gQhXdo3F1Z4cR_zjEmaUZD8PGSMHrrsOyxOvZsFLd5A",
+      "github":"https://github.com/Aranwill"
     },
     {
       "id": 5,
-      "name": "Jorge Niglia"
+      "name": "Jorge Niglia",
+      "linkedin": "https://www.linkedin.com/in/jorge-a-niglia-b7ba6024b/",
+      "image": "https://media-exp1.licdn.com/dms/image/D4E03AQEcv0nI6aM9aA/profile-displayphoto-shrink_200_200/0/1663437234817?e=1668643200&v=beta&t=tnTX9oQ4T9JGMwVS_edx7vACGcF1k0neKdWd0EVCZJA",
+      "github":"https://github.com/nilia2020"
     }
   ]
 }

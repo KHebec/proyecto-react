@@ -5,7 +5,7 @@ export const Box = styled.div`
   position: absolute;
   width: 100%;
   @media (min-width: 480px) {
-    padding: 10px 0px;
+    padding: 10px 0 0;
   }
 `;
 
@@ -20,52 +20,19 @@ export const Container = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  text-align: center;
+
   align-items: center;
-  @media (max-width: 1024px) {
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    align-items: center;
-  }
-  @media (max-width: 768px) {
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    align-items: center;
-  }
-  @media (max-width: 480px) {
-    padding: 0% 0% 3% 0%;
-    margin: 5% 0% 0% 0%;
-    align-items: center;
-  }
-  @media (max-width: 320px) {
-    padding: 10% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    align-items: center;
-  }
 `;
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
   padding-top: 20px;
-  @media (max-width: 1024px) {
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    grid-gap: 0px;
-  }
-  @media (max-width: 768px) {
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    grid-gap: 0px;
-  }
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
-  }
-  @media (max-width: 320px) {
-    grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
   }
 `;
@@ -73,13 +40,13 @@ export const Row = styled.div`
 export const FooterLink = styled.a`
   grid-template-columns: repeat(2, 1fr);
   color: #000;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 16px;
   text-decoration: none;
   font-weigth: bold;
   &:hover {
-    color: #004225; /*letras abajo antes era green */
-    font-size: 20px;
+    color: #004225;
+    font-size: 14px;
     transition: 200ms ease-in;
   }
   @media (min-width: 480px) {
@@ -89,12 +56,12 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   color: #004225;
   margin-bottom: 20px;
   font-weight: bold;
   @media (min-width: 320px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 

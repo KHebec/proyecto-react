@@ -1,23 +1,23 @@
 export const About = () => {
   return (
     <section className="about-container">
-      <h2 className="my-4 text-xl font-bold text-center text-spirits">
-        Sobre Nosotros
+      <h2 className="my-2 text-xl font-bold text-center xl:text-2xl text-spirits">
+        Acerca de Spirits
       </h2>
       <div className="flex flex-col md:flex-row ">
-        <section className="flex flex-col justify-between mx-4 text-sm md:text-md lg:w-2/3 xl:text-lg">
-          <p className="font-semibold">
+        <section className="flex flex-col justify-between mx-4 text-md lg:w-2/3 xl:text-xl">
+          <p className="mb-2 font-semibold text-md">
             Spirits es una empresa que comercializa bebidas blancas desde 2022.
           </p>
 
           <p className="italic">
-            Nuestra misión es brindar una experiencia única que permita a
-            nuestro cliente disfrutar de las bebidas con todos sus sentidos.
+            Nuestra misión es brindar una experiencia única de compra de bebidas
+            blancas.
           </p>
 
-          <p className="font-semibold">Para ello nos ocupamos de:</p>
+          <p className="my-2 font-semibold">Para ello nos ocupamos de:</p>
 
-          <ul className="ml-2">
+          <ul className="flex flex-col gap-4 ml-2">
             <li>- Ofrecer las mejores marcas y productos del mercado.</li>
             <li>- Brindar asesoramiento para obtener lo que se desea.</li>
             <li>- Tener una experiencia de compra sencilla y segura.</li>
