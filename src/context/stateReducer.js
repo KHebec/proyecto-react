@@ -1,17 +1,18 @@
 import { TYPES } from "./actions";
 
-export const shoppingInitialState = {
+export const stateInitialState = {
   products: [],
   cart: [],
 };
 
-export function shoppingReducer(state, action) {
+export function stateReducer(state, action) {
   switch (action.type) {
     case TYPES.READ_STATE: {
       return {
         ...state,
         products: action.payload[0],
         cart: action.payload[1],
+        authors: action.payload[2],
       };
     }
 

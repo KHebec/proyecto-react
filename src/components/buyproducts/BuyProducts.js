@@ -1,10 +1,9 @@
 import { useContext } from "react";
-import { ShoppingContext } from "./../../context/ShoppingContext";
-
+import { StateContext } from "../../context/StateContext";
 import CardProduct from "./CardProduct";
 
 const BuyProducts = () => {
-  const data = useContext(ShoppingContext);
+  const data = useContext(StateContext);
   const { products, addToCart } = data;
 
   return (

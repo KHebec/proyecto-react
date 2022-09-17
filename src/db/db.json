@@ -115,15 +115,6 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
-      "name": "Ballentines",
-      "price": "5300",
-      "content": 1,
-      "category": "whisky",
-      "quantity": 4
-    },
-    {
       "id": 2,
       "image": "https://vinotecamasis.com.ar/wp-content/uploads/2021/11/Whisky-Johnnie-Walker-Double-Black-750-ml.png",
       "name": "Johnnie Walker",
@@ -157,7 +148,29 @@
       "price": "5970",
       "content": 1,
       "category": "gin",
-      "quantity": 2
+      "quantity": 1
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Karen Carboni"
+    },
+    {
+      "id": 2,
+      "name": "Esteban Colunga"
+    },
+    {
+      "id": 3,
+      "name": "Walter Alejandro"
+    },
+    {
+      "id": 4,
+      "name": "Héctor Rodríguez"
+    },
+    {
+      "id": 5,
+      "name": "Jorge Niglia"
     }
   ]
 }

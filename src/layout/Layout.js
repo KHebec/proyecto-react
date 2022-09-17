@@ -1,9 +1,9 @@
-import ShoppingProvider from "../context/ShoppingContext";
+import StateProvider from "../context/StateContext";
 import React from "react";
 const Layout = ({ children }) => {
   return (
     <React.StrictMode>
-      <ShoppingProvider>{children}</ShoppingProvider>
+      <StateProvider>{children}</StateProvider>
     </React.StrictMode>
   );
 };

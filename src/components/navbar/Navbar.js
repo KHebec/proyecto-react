@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ShoppingContext } from "./../../context/ShoppingContext";
+import { StateContext } from "../../context/StateContext";
 import { useModal } from "../../hooks/useModal";
 import ModalCart from "../cart/ModalCart";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import CartItem from "../cart/CartItem";
 import { Button } from "../button/Button";
 
 const Navbar = () => {
-  const data = useContext(ShoppingContext);
+  const data = useContext(StateContext);
   const { cart, addToCart, deleteFromCart, cleanCart } = data;
   const [isOpenModal, openModal, closeModal] = useModal(false);
   const [isOpen, setIsOpen] = useState(false);

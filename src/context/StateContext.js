@@ -1,25 +1,31 @@
 import { TYPES } from "./actions";
 import { createContext, useEffect, useState, useReducer } from "react";
 import axios from "axios";
-import { shoppingInitialState } from "./shoppingReducer";
-import { shoppingReducer } from "./shoppingReducer";
+import { stateInitialState } from "./stateReducer";
+import { stateReducer } from "./stateReducer";
 
-export const ShoppingContext = createContext();
+export const StateContext = createContext();
 
-const ShoppingProvider = (props) => {
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+const StateProvider = (props) => {
+  const [state, dispatch] = useReducer(stateReducer, stateInitialState);
   const productsURL = "http://localhost:5000/products",
     cartURL = "http://localhost:5000/cart";
-  const { products, cart } = state;
+  const authorsURL = "http://localhost:5000/authors";
+  const { products, cart, authors } = state;
   const [loading, setLoading] = useState(false);
-  const [itemQuantity, setItemQuantity] = useState(0);
 
   const updateState = async () => {
     const resProducts = await axios.get(productsURL),
-      resCart = await axios.get(cartURL);
+      resCart = await axios.get(cartURL),
+      resAuthors = await axios.get(authorsURL);
     const productList = await resProducts.data,
-      cartList = await resCart.data;
-    dispatch({ type: TYPES.READ_STATE, payload: [productList, cartList] });
+      cartList = await resCart.data,
+      authorList = await resAuthors.data;
+
+    dispatch({
+      type: TYPES.READ_STATE,
+      payload: [productList, cartList, authorList],
+    });
   };
   useEffect(() => {
     setLoading(true);
@@ -31,11 +37,11 @@ const ShoppingProvider = (props) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: name });
     if (!cart.find((e) => e.name === data.name)) {
       data.quantity = 1;
-      setItemQuantity(data.quantity);
+
       await axios.post(cartURL, data);
     } else {
       data.quantity = data.quantity + 1;
-      setItemQuantity(data.quantity);
+
       await axios.put(`${cartURL}/${data.id}`, data);
     }
   };
@@ -67,18 +73,16 @@ const ShoppingProvider = (props) => {
   const data = {
     products,
     cart,
+    authors,
     loading,
     updateState,
     addToCart,
     deleteFromCart,
     cleanCart,
-    itemQuantity,
   };
   return (
-    <ShoppingContext.Provider value={data}>
-      {props.children}
-    </ShoppingContext.Provider>
+    <StateContext.Provider value={data}>{props.children}</StateContext.Provider>
   );
 };
 
-export default ShoppingProvider;
+export default StateProvider;

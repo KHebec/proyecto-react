@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import AboutUs from "../components/aboutus/AboutUs";
 
 const About = () => {
   return (
@@ -7,7 +8,9 @@ const About = () => {
       <header>
         <Navbar />
       </header>
-      <section>About</section>
+      <section>
+        <AboutUs />
+      </section>
       <footer>
         <Footer />
       </footer>

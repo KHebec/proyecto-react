@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { ShoppingContext } from "../../context/ShoppingContext";
+import { StateContext } from "../../context/StateContext";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./Carousel.css";
 
 const Carousel = () => {
   const handleDragStart = (e) => e.preventDefault();
-  const data = useContext(ShoppingContext);
+  const data = useContext(StateContext);
   const { products } = data;
 
   const items = products.map((e) => (
