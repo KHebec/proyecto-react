@@ -4,8 +4,8 @@ export const About = () => {
       <h2 className="my-4 text-xl font-bold text-center text-spirits">
         Sobre Nosotros
       </h2>
-      <div className="flex flex-col md:flex-row">
-        <section className="flex flex-col justify-between mx-4 text-justify text-md ">
+      <div className="flex flex-col md:flex-row ">
+        <section className="flex flex-col justify-between mx-4 text-sm md:text-md lg:w-2/3 xl:text-lg">
           <p className="font-semibold">
             Spirits es una empresa que comercializa bebidas blancas desde 2022.
           </p>
@@ -27,7 +27,7 @@ export const About = () => {
           </ul>
         </section>
         <img
-          className="object-contain mx-auto w-96"
+          className="object-contain mx-auto w-96 lg:w-1/4"
           src="https://www.drinksco.es/blog/assets/uploads/sites/2/2020/03/bes-liquor-brand-world-1024x683.jpg"
           alt="bebidas"
         />

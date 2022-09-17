@@ -12,7 +12,7 @@ import { Button } from "../button/Button";
 
 const Navbar = () => {
   const data = useContext(ShoppingContext);
-  const { cart, deleteFromCart, cleanCart } = data;
+  const { cart, addToCart, deleteFromCart, cleanCart } = data;
   const [isOpenModal, openModal, closeModal] = useModal(false);
   const [isOpen, setIsOpen] = useState(false);
   const totalQuantity = cart.reduce((previous, current) => {
@@ -57,19 +57,20 @@ const Navbar = () => {
                     key={item.name}
                     data={item}
                     deleteFromCart={deleteFromCart}
+                    addToCart={addToCart}
                   />
                 ))}
               </article>
             </section>
             <section className="flex flex-col items-center">
-              <div className="mx-auto my-2">
+              <div className="mx-auto mt-4">
                 <Button
                   name="Limpiar carrito de compras"
                   click={() => {
                     cleanCart(cart);
                     closeModal();
                   }}
-                  bg={"bg-yellow-600"}
+                  bg={"bg-slate-500"}
                 />
               </div>
 

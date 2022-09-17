@@ -4,10 +4,10 @@
 }
 .alice-carousel__stage-item {
   vertical-align: middle;
-  text-align: center;
 }
 .img-gallery {
   padding-top: 20px;
+  margin-inline: auto;
   height: 250px !important;
   width: 200px;
   max-width: 100%;

@@ -12,13 +12,14 @@ const ShoppingProvider = (props) => {
     cartURL = "http://localhost:5000/cart";
   const { products, cart } = state;
   const [loading, setLoading] = useState(false);
+  const [itemQuantity, setItemQuantity] = useState(0);
 
   const updateState = async () => {
     const resProducts = await axios.get(productsURL),
       resCart = await axios.get(cartURL);
     const productList = await resProducts.data,
-      newCartItem = await resCart.data;
-    dispatch({ type: TYPES.READ_STATE, payload: [productList, newCartItem] });
+      cartList = await resCart.data;
+    dispatch({ type: TYPES.READ_STATE, payload: [productList, cartList] });
   };
   useEffect(() => {
     setLoading(true);
@@ -30,9 +31,11 @@ const ShoppingProvider = (props) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: name });
     if (!cart.find((e) => e.name === data.name)) {
       data.quantity = 1;
+      setItemQuantity(data.quantity);
       await axios.post(cartURL, data);
     } else {
       data.quantity = data.quantity + 1;
+      setItemQuantity(data.quantity);
       await axios.put(`${cartURL}/${data.id}`, data);
     }
   };
@@ -69,6 +72,7 @@ const ShoppingProvider = (props) => {
     addToCart,
     deleteFromCart,
     cleanCart,
+    itemQuantity,
   };
   return (
     <ShoppingContext.Provider value={data}>

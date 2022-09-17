@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 const About = () => {
   return (
@@ -7,7 +8,9 @@ const About = () => {
         <Navbar />
       </header>
       <section>About</section>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

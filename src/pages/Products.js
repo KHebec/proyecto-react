@@ -1,5 +1,6 @@
 import BuyProducts from "../components/buyproducts/BuyProducts";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 const Products = () => {
   return (
@@ -10,7 +11,9 @@ const Products = () => {
       <section className="mt-24">
         <BuyProducts />
       </section>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
