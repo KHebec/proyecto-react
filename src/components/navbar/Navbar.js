@@ -30,13 +30,18 @@ const Navbar = () => {
           <Link to="/about">Sobre Nosotros</Link>
           <Link to="/products">Productos</Link>
         </div>
+
         <div className="icons">
-          <img className="cursor-pointer" src={search} alt="search" />
-          <img className="cursor-pointer" src={user} alt="user" />{" "}
+          <img
+            className="cursor-pointer text-spirits"
+            src={search}
+            alt="search"
+          />
+          <img className="cursor-pointer text-spirits" src={user} alt="user" />
           <div className="relative">
             <img
               onClick={openModal}
-              className="cursor-pointer"
+              className="cursor-pointer text-spirits"
               src={shoppingCart}
               alt="shopping-cart"
             />
@@ -45,6 +50,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
+
         <div
           className={`nav-toggle ${isOpen && "open"}`}
           onClick={() => setIsOpen(!isOpen)}
