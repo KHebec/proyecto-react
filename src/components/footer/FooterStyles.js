@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 0% 0% 0% 0%;
   position: absolute;
   width: 100%;
   @media (min-width: 480px) {
