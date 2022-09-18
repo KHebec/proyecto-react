@@ -11,7 +11,7 @@ const About = () => {
       <section className="mb-16">
         <AboutUs />
       </section>
-      <footer className="fixed bottom-0">
+      <footer className="bottom-0">
         <Footer />
       </footer>
     </div>
