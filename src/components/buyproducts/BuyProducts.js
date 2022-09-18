@@ -7,7 +7,7 @@ const BuyProducts = () => {
   const { products, addToCart } = data;
 
   return (
-    <section>
+    <section className="mb-8">
       <h2 className="my-4 mb-8 text-xl font-bold text-center text-spirits">
         Compra tus bebidas preferidas
       </h2>
