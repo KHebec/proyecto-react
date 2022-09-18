@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 import CartEmpty from "../cart/CartEmpty";
 import CartItem from "../cart/CartItem";
 import { Button } from "../button/Button";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const data = useContext(StateContext);
   const { cart, addToCart, deleteFromCart, cleanCart } = data;
@@ -28,7 +29,9 @@ const Navbar = () => {
           <Link to="/about">Sobre Nosotros</Link>
           <Link to="/products">Productos</Link>
         </div>
+
         <div className="icons">
+          <FontAwesomeIcon icon={faCoffee} />
           <i className="fas fa-search"></i>
           <i className="fas fa-user-alt"></i>
           <i onClick={openModal} className="relative fas fa-shopping-cart">
