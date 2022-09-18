@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 import CartEmpty from "../cart/CartEmpty";
 import CartItem from "../cart/CartItem";
 import { Button } from "../button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const data = useContext(StateContext);
@@ -29,13 +33,24 @@ const Navbar = () => {
           <Link to="/products">Productos</Link>
         </div>
         <div className="icons">
-          <i className="fas fa-search"></i>
-          <i className="fas fa-user-alt"></i>
-          <i onClick={openModal} className="relative fas fa-shopping-cart">
-            <div className="absolute text-center circle-quantity">
+          <FontAwesomeIcon
+            className="cursor-pointer text-spirits"
+            icon={faSearch}
+          />
+          <FontAwesomeIcon
+            className="cursor-pointer text-spirits"
+            icon={faUserAlt}
+          />
+          <div className="relative">
+            <FontAwesomeIcon
+              onClick={openModal}
+              className="cursor-pointer text-spirits"
+              icon={faShoppingCart}
+            />
+            <span className="absolute font-semibold text-center circle-quantity">
               {totalQuantity}
-            </div>{" "}
-          </i>
+            </span>
+          </div>
         </div>
         <div
           className={`nav-toggle ${isOpen && "open"}`}
