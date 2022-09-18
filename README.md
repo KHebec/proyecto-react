@@ -16,12 +16,18 @@ tailwind css
 
 styled components
 
-font-awesome
-
 react alice carousel
 
 json-server
 
-Axios
+axios
 
 react-icons
+
+## `deployment`
+
+https://spirits-app.herokuapp.com/
+
+servidor:
+
+https://fake-json-server-nilia.herokuapp.com/
