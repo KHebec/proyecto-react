@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { Button } from "../button/Button";
+
 const CardToBuy = ({ img, name, style, cites }) => {
   return (
     <article
