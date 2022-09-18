@@ -23,7 +23,6 @@ const Footer = () => {
           className="HeadFoot"
           style={{
             backgroundImage: `url(${fondo})`,
-            paddingBlock: "30px",
           }}
         >
           <h1
@@ -33,6 +32,7 @@ const Footer = () => {
               fontWeight: "bold",
               fontSize: "1.3rem",
               marginBottom: "20px",
+              paddingTop: "20px",
             }}
           >
             Seguinos en nuestras Redes Sociales
@@ -87,7 +87,7 @@ const Footer = () => {
           </Row>
         </div>
       </Container>
-      <Container style={{ padding: "4% 0% 0% 0%", margin: "0% 0% 5% 0%" }}>
+      <Container>
         <Row>
           <Column>
             <img
@@ -106,14 +106,15 @@ const Footer = () => {
               <Heading>Sobre Nosotros</Heading>
             </Link>
 
-            <FooterLink className="font-bold" href="#">
-              Nosotros
+            <FooterLink className="font-bold" href="#about">
+              Acerca de Spirits
             </FooterLink>
-            <FooterLink className="font-bold" href="#">
+
+            <FooterLink className="font-bold" href="#vision">
               Nuestra Visión
             </FooterLink>
-            <FooterLink className="font-bold" href="#">
-              FAQS
+            <FooterLink className="font-bold" href="#como">
+              Objetivos
             </FooterLink>
           </Column>
           <Column>
@@ -146,7 +147,7 @@ const Footer = () => {
         </Row>
       </Container>
       <p
-        className="py-1 text-xs text-center"
+        className="py-1 text-xs font-medium text-center"
         style={{ backgroundColor: "#004225", color: "white" }}
       >
         Copyright© 2022 Spirits
