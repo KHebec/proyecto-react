@@ -9,10 +9,9 @@ import { Link } from "react-router-dom";
 import CartEmpty from "../cart/CartEmpty";
 import CartItem from "../cart/CartItem";
 import { Button } from "../button/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import search from "./../../assets/images/loupe.svg";
+import shoppingCart from "./../../assets/images/shopping-cart.svg";
+import user from "./../../assets/images/user.svg";
 const Navbar = () => {
   const data = useContext(StateContext);
   const { cart, addToCart, deleteFromCart, cleanCart } = data;
@@ -33,19 +32,18 @@ const Navbar = () => {
         </div>
 
         <div className="icons">
-          <FontAwesomeIcon
+          <img
             className="cursor-pointer text-spirits"
-            icon={faSearch}
+            src={search}
+            alt="search"
           />
-          <FontAwesomeIcon
-            className="cursor-pointer text-spirits"
-            icon={faUserAlt}
-          />
+          <img className="cursor-pointer text-spirits" src={user} alt="user" />
           <div className="relative">
-            <FontAwesomeIcon
+            <img
               onClick={openModal}
               className="cursor-pointer text-spirits"
-              icon={faShoppingCart}
+              src={shoppingCart}
+              alt="shopping-cart"
             />
             <span className="absolute font-semibold text-center circle-quantity">
               {totalQuantity}

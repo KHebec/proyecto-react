@@ -113,7 +113,35 @@
       "category": "vodka"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "image": "https://vinotecamasis.com.ar/wp-content/uploads/2021/11/Whisky-Johnnie-Walker-Double-Black-750-ml.png",
+      "name": "Johnnie Walker",
+      "price": "12500",
+      "content": 1,
+      "category": "whisky",
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
+      "name": "Ballentines",
+      "price": "5300",
+      "content": 1,
+      "category": "whisky",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "image": "https://d2r9epyceweg5n.cloudfront.net/stores/855/349/products/glenfiddich1-9e5f26f61ec2d2e19316469249991695-1024-1024.jpeg",
+      "name": "Glenfiddich",
+      "price": "8650",
+      "content": 1,
+      "category": "whisky",
+      "quantity": 1
+    }
+  ],
   "authors": [
     {
       "id": 1,
