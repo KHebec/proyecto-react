@@ -31,7 +31,7 @@ const Footer = () => {
               color: "#004225",
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "1.2rem",
+              fontSize: "1.3rem",
               marginBottom: "20px",
             }}
           >
