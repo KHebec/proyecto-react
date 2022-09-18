@@ -8,9 +8,9 @@ export const StateContext = createContext();
 
 const StateProvider = (props) => {
   const [state, dispatch] = useReducer(stateReducer, stateInitialState);
-  const productsURL = "https://fake-json-server-nilia.herokuapp.com/products",
-    cartURL = "https://fake-json-server-nilia.herokuapp.com/cart";
-  const authorsURL = "https://fake-json-server-nilia.herokuapp.com/authors";
+  const productsURL = "http://localhost:5000/products",
+    cartURL = "http://localhost:5000/cart";
+  const authorsURL = "http://localhost:5000/authors";
   const { products, cart, authors } = state;
   const [loading, setLoading] = useState(false);
 
