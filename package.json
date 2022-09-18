@@ -19,8 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "json-server --port 5000  --watch db.json",
-    "build": "react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "server":"json-server --port 5000  --watch db.json"
     
   },
   "eslintConfig": {
