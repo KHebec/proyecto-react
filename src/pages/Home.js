@@ -66,7 +66,7 @@ const Home = () => {
           <Carousel />
         </section>
       </main>
-      {/* footer */}
+
       <footer>
         <Footer />
         <ScrollButton />
