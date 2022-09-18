@@ -4,7 +4,7 @@ export const Box = styled.div`
   position: absolute;
   width: 100%;
   @media (min-width: 480px) {
-    padding: 10px 0 0;
+    // padding: 10px 0 0;
   }
 `;
 
@@ -20,7 +20,6 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-
   align-items: center;
 `;
 
@@ -43,6 +42,7 @@ export const FooterLink = styled.a`
   line-height: 16px;
   text-decoration: none;
   font-weigth: bold;
+  padding-bottom: 20px;
   &:hover {
     color: #004225;
     font-size: 14px;
@@ -50,7 +50,8 @@ export const FooterLink = styled.a`
   }
   @media (min-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
+    font-size: 16px;
+    line-height: 20px;
   }
 `;
 

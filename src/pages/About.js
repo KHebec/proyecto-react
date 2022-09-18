@@ -8,7 +8,7 @@ const About = () => {
       <header>
         <Navbar />
       </header>
-      <section>
+      <section className="mb-16">
         <AboutUs />
       </section>
       <footer>
