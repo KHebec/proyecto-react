@@ -24,4 +24,10 @@ json-server
 
 Axios
 
-react-icons
+## `Deployment`
+
+https://spirits-app.herokuapp.com/
+
+Servidor:
+
+https://fake-json-server-nilia.herokuapp.com/
