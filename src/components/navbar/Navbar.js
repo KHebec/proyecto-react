@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="relative">
             <FontAwesomeIcon
               onClick={openModal}
-              className="cursor-pointer  text-spirits"
+              className="cursor-pointer text-spirits"
               icon={faShoppingCart}
             />
             <span className="absolute font-semibold text-center circle-quantity">
